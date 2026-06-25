@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: currencyConverter
+
+server:
+  port: 9090
+
+freecurrency:
+  api:
+    key: "fca_live_HSBRIzAeVqOKvwlIJRsMOje1JNIqG8RyU6fHzT8A"
+    url: "https://api.freecurrencyapi.com/v1/latest"
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+    url: /api-docs
+
