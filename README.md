@@ -21,6 +21,10 @@
 - 📝 **Swagger UI** — interactive API documentation
 - ⚡ **Zero database** — stateless, lightweight, and fast
 - 🔒 **Externalized config** — API key stored in `application.properties`
+- 🛡️ **Global Exception Handling** — meaningful error messages for invalid currencies and units
+- ✅ **Input Validation** — validates currency codes and units before calling the API
+- 🔁 **Auto-deserialization** — FreeCurrencyAPI response mapped directly to POJO via Jackson
+- 🧹 **Clean Architecture** — controller, service, model and exception layers separated
 
 ---
 
