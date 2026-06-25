@@ -22,12 +22,7 @@ public class CurrencyController {
             @RequestParam String toCurrency,
             @RequestParam double units) {
 
-        try {
-            ConversionResponse result = currencyConverter.convert(fromCurrency, toCurrency, units);
-            return ResponseEntity.ok(result);
-        } catch (Exception e) {
-            return ResponseEntity.badRequest()
-                    .body(Map.of("error", "Conversion failed: " + e.getMessage()));
-        }
+        ConversionResponse result = currencyConverter.convert(fromCurrency, toCurrency, units);
+        return ResponseEntity.ok(result);
     }
 }
